@@ -94,4 +94,8 @@ Hình minh họa: http://prntscr.com/5o0p70
 
 Trong hình trên, máy client có tên là `controller` đã được ping thành công.
 
+### Thực hiện cài đặt gói git lên các máy client
+```sh
+salt '*' pkg.install git
+```
 
