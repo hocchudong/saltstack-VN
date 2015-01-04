@@ -55,6 +55,10 @@ Mở file /etc/salt/minion, tìm dòng `#master:salt` (dòng 16) và thay thành
 
 ```sh
 master: IP_cua_may_Master
+
+Hoặc dùng lệnh dưới để sửa
+
+sed -i 's/#master: salt/master: 172.16.69.114/g' /etc/salt/minion
 ```
 
 Hình minh họa: http://prntscr.com/5o0ns1
