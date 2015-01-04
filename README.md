@@ -8,6 +8,7 @@ Tài liệu tham khảo:
 * http://vbyron.com/blog/infrastructure-management-saltstack-part-1-getting-started/
 * http://eon01.com/blog/salt-stack-tutorial-for-beginners/
 * https://www.digitalocean.com/community/tutorials/how-to-install-salt-on-ubuntu-12-04
+* http://paulcodr.co/blog/2014/saltstack-intall-centos/
 
 
 # Saltstack là gì !
@@ -76,7 +77,11 @@ Hình minh họa: http://prntscr.com/5o0nfo
 Trên màn hình sẽ hiển thị các máy đã kết nối với Master và hỏi xem bạn có tiếp nhận các máy này hay không. Chọn Y để tiếp nhận các key này.
 
 Hãy thử cài đặt một máy thứ 3, sử dụng distro CENTOS 6.5.
-
+```sh
+rpm -Uvh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+yum install salt-minion -y
+chkconfig salt-minion on
+```
 ### Thực hiện các lệnh kiểm tra đầu tiên
 
 - Thực hiện lệnh `ping` tới các máy được máy master quản lý.
