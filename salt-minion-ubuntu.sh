@@ -12,7 +12,7 @@ add-apt-repository ppa:saltstack/salt -y
 apt-get update
 apt-get -y install salt-minion
 
-sed -i 's/#master: salt/master: $IP_MASTER/g' /etc/salt/minion
+sed -i "s/#master: salt/master: $IP_MASTER/g" /etc/salt/minion
 
 service salt-minion restart 
 
