@@ -8,3 +8,4 @@ add-apt-repository ppa:saltstack/salt -y
 apt-get update
 apt-get -y install salt-master
 
+echo "##### Da cai dat xong Salt tren may Master #####"
