@@ -108,5 +108,5 @@ salt '*' pkg.install git
 ```sh
 salt "congjuno*" cmd.run "touch /root/test.txt"
 ```
-
+- Hình minh họa: http://prntscr.com/625sc5
 
