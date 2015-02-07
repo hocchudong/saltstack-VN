@@ -103,3 +103,10 @@ Trong hình trên, máy client có tên là `controller` đã được ping thà
 salt '*' pkg.install git
 ```
 
+### Thực thi lệnh từ salt-master
+- Thực thi lệnh `touch /root/test.txt` với tất cả các máy có tên bắt đầu là `congjuno`
+```sh
+salt "congjuno*" cmd.run "touch /root/test.txt"
+```
+
+
